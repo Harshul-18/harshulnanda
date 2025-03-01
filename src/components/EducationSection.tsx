@@ -41,7 +41,7 @@ export function EducationSection() {
     {
       year: "2021",
       title: "JEE Mains",
-      description: "Qualified with All India Rank 44691 (out of approximately 2.2 million applicants)."
+      description: "Qualified with All India Rank 44691."
     }
   ];
 
