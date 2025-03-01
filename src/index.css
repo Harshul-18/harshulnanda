@@ -1,0 +1,233 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Neon Nights (Purple) Theme */
+    --background: 260 50% 3%;
+    --background-start: 260 50% 3%;
+    --background-end: 290 70% 20%;
+    --foreground: 0 0% 98%;
+    
+    --card: 260 50% 6%;
+    --card-foreground: 0 0% 98%;
+    
+    --border: 270 70% 30%;
+    --input: 270 70% 30%;
+    
+    --primary: 260 100% 70%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 280 70% 16%;
+    --secondary-foreground: 0 0% 98%;
+    
+    --accent: 270 100% 70%;
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --ring: 270 70% 50%;
+    
+    --muted: 260 40% 14%;
+    --muted-foreground: 260 10% 70%;
+    
+    --popover: 260 50% 4%;
+    --popover-foreground: 0 0% 98%;
+
+    --theme-accent: 270 100% 70%;
+
+    --radius: 0.75rem;
+  }
+
+  .theme-ember {
+    /* Ember (Red) Theme */
+    --background: 0 50% 3%;
+    --background-start: 0 50% 5%;
+    --background-end: 15 90% 20%;
+    --foreground: 0 0% 98%;
+    
+    --card: 0 50% 6%;
+    --card-foreground: 0 0% 98%;
+    
+    --border: 15 90% 30%;
+    --input: 15 90% 30%;
+    
+    --primary: 20 100% 60%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 15 70% 16%;
+    --secondary-foreground: 0 0% 98%;
+    
+    --accent: 30 100% 60%;
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --ring: 30 90% 50%;
+    
+    --muted: 0 40% 14%;
+    --muted-foreground: 0 10% 70%;
+    
+    --popover: 0 50% 4%;
+    --popover-foreground: 0 0% 98%;
+
+    --theme-accent: 30 100% 60%;
+  }
+
+  .theme-azure {
+    /* Azure (Blue) Theme */
+    --background: 220 70% 3%;
+    --background-start: 220 70% 5%;
+    --background-end: 200 80% 20%;
+    --foreground: 0 0% 98%;
+    
+    --card: 220 70% 6%;
+    --card-foreground: 0 0% 98%;
+    
+    --border: 210 80% 30%;
+    --input: 210 80% 30%;
+    
+    --primary: 210 100% 60%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 210 70% 16%;
+    --secondary-foreground: 0 0% 98%;
+    
+    --accent: 195 100% 60%;
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --ring: 195 90% 50%;
+    
+    --muted: 220 40% 14%;
+    --muted-foreground: 220 10% 70%;
+    
+    --popover: 220 70% 4%;
+    --popover-foreground: 0 0% 98%;
+
+    --theme-accent: 195 100% 60%;
+  }
+
+  .theme-verdant {
+    /* Verdant (Green) Theme */
+    --background: 140 70% 3%;
+    --background-start: 140 70% 5%;
+    --background-end: 120 80% 15%;
+    --foreground: 0 0% 98%;
+    
+    --card: 140 70% 6%;
+    --card-foreground: 0 0% 98%;
+    
+    --border: 130 80% 20%;
+    --input: 130 80% 20%;
+    
+    --primary: 130 80% 50%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 140 50% 16%;
+    --secondary-foreground: 0 0% 98%;
+    
+    --accent: 90 80% 50%;
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --ring: 90 80% 40%;
+    
+    --muted: 140 40% 14%;
+    --muted-foreground: 140 10% 70%;
+    
+    --popover: 140 70% 4%;
+    --popover-foreground: 0 0% 98%;
+
+    --theme-accent: 90 80% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border selection:bg-primary/20 selection:text-primary;
+  }
+  
+  html {
+    @apply scroll-smooth overflow-x-hidden;
+  }
+  
+  body {
+    @apply bg-gradient-to-br from-background-start to-background-end text-foreground min-h-screen overflow-x-hidden;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  section {
+    @apply py-16 px-6 md:px-12 lg:px-24 min-h-screen flex flex-col justify-center overflow-hidden;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-card/30 backdrop-blur-lg border border-border/50 rounded-xl shadow-lg;
+  }
+  
+  .glass-card {
+    @apply glass p-6 transition-all duration-300 hover:bg-card/40 hover:shadow-xl hover:border-border/80;
+  }
+
+  .glassnav {
+    @apply bg-background/50 backdrop-blur-xl border-b border-border/30 shadow-md;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
+  }
+
+  .hover-scale {
+    @apply transition-transform duration-300 hover:scale-105;
+  }
+
+  .animate-enter {
+    @apply opacity-0;
+    animation: enter 0.8s ease forwards;
+  }
+
+  .theme-selector {
+    @apply fixed bottom-6 right-6 z-50;
+  }
+  
+  .cursor-blink {
+    @apply w-0.5 h-6 bg-primary ml-1 animate-blink;
+  }
+}
+
+@keyframes enter {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-background/50;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/50 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary/80;
+}
