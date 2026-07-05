@@ -75,7 +75,7 @@ export default function Navbar() {
               <li key={item.id}>
                 <button
                   onClick={() => go(item.id)}
-                  className="relative rounded-full px-3.5 py-1.5 text-sm text-muted transition-colors hover:text-fg"
+                  className="relative whitespace-nowrap rounded-full px-3.5 py-1.5 text-sm text-muted transition-colors hover:text-fg"
                 >
                   {active === item.id && (
                     <motion.span
