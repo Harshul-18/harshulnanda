@@ -1,0 +1,38 @@
+{
+  "pages": {
+    "/_not-found/page": [
+      "static/chunks/webpack-b10e30b937f4618d.js",
+      "static/chunks/c7879cf7-b5ab1053c1d9a2e7.js",
+      "static/chunks/131-05e553fb4d916d82.js",
+      "static/chunks/main-app-9a9a477a74394780.js",
+      "static/chunks/app/_not-found/page-2bb9348a242e91d9.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-b10e30b937f4618d.js",
+      "static/chunks/c7879cf7-b5ab1053c1d9a2e7.js",
+      "static/chunks/131-05e553fb4d916d82.js",
+      "static/chunks/main-app-9a9a477a74394780.js",
+      "static/css/55a38bcac7549333.css",
+      "static/chunks/107-2929d417984876a7.js",
+      "static/chunks/558-d25ab88b98b96a8a.js",
+      "static/chunks/app/layout-bb76f1d993842e48.js"
+    ],
+    "/opengraph-image/route": [
+      "static/chunks/webpack-b10e30b937f4618d.js",
+      "static/chunks/c7879cf7-b5ab1053c1d9a2e7.js",
+      "static/chunks/131-05e553fb4d916d82.js",
+      "static/chunks/main-app-9a9a477a74394780.js",
+      "static/chunks/app/opengraph-image/route-8865bc578103145f.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-b10e30b937f4618d.js",
+      "static/chunks/c7879cf7-b5ab1053c1d9a2e7.js",
+      "static/chunks/131-05e553fb4d916d82.js",
+      "static/chunks/main-app-9a9a477a74394780.js",
+      "static/chunks/107-2929d417984876a7.js",
+      "static/chunks/983-1c23667dfe9ebd36.js",
+      "static/chunks/558-d25ab88b98b96a8a.js",
+      "static/chunks/app/page-8c5cdd5826d398b6.js"
+    ]
+  }
+}
