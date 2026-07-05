@@ -10,10 +10,8 @@ export default function Cursor() {
 
   const x = useMotionValue(-100);
   const y = useMotionValue(-100);
-  const ringX = useSpring(x, { stiffness: 350, damping: 32, mass: 0.5 });
-  const ringY = useSpring(y, { stiffness: 350, damping: 32, mass: 0.5 });
-  const dotX = useSpring(x, { stiffness: 1100, damping: 50 });
-  const dotY = useSpring(y, { stiffness: 1100, damping: 50 });
+  const ringX = useSpring(x, { stiffness: 700, damping: 42, mass: 0.25 });
+  const ringY = useSpring(y, { stiffness: 700, damping: 42, mass: 0.25 });
 
   useEffect(() => {
     const fine = window.matchMedia("(hover: hover) and (pointer: fine)");
@@ -71,8 +69,8 @@ export default function Cursor() {
         aria-hidden
         className="pointer-events-none fixed left-0 top-0 z-[80] h-1.5 w-1.5 rounded-full bg-brand-2 mix-blend-difference"
         style={{
-          x: dotX,
-          y: dotY,
+          x,
+          y,
           translateX: "-50%",
           translateY: "-50%",
         }}
