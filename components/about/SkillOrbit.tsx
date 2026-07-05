@@ -36,7 +36,7 @@ const NODES: OrbitNode[] = [
     accent: "#a78bfa",
     ring: 0,
     angle: 0,
-    desc: "I design, train and evaluate models from start to finish.",
+    desc: "Designing, training and evaluating models from start to finish.",
     tags: ["PyTorch", "TensorFlow", "Keras", "Scikit-learn", "OpenCV"],
   },
   {
@@ -46,7 +46,7 @@ const NODES: OrbitNode[] = [
     accent: "#34d399",
     ring: 0,
     angle: 180,
-    desc: "I use multi-agent reinforcement learning to simulate energy markets at KIT.",
+    desc: "Using multi-agent reinforcement learning to simulate energy markets at KIT.",
     tags: ["MAPPO", "ASSUME framework", "Policy Optimization"],
   },
   {
@@ -56,7 +56,7 @@ const NODES: OrbitNode[] = [
     accent: "#22d3ee",
     ring: 1,
     angle: 35,
-    desc: "I build reliable pipelines that clean, harmonize and validate data.",
+    desc: "Building reliable pipelines that clean, harmonize and validate data.",
     tags: ["Pipelines", "Validation", "CI/CD", "Pandas"],
   },
   {
@@ -66,7 +66,7 @@ const NODES: OrbitNode[] = [
     accent: "#818cf8",
     ring: 1,
     angle: 155,
-    desc: "I fine-tune language models for practical text classification tasks.",
+    desc: "Fine-tuning language models for practical text classification tasks.",
     tags: ["BERT", "98% accuracy", "LangChain"],
   },
   {
@@ -76,7 +76,7 @@ const NODES: OrbitNode[] = [
     accent: "#38bdf8",
     ring: 1,
     angle: 275,
-    desc: "I work on trajectory tracking and obstacle avoidance with TurtleBot 3.",
+    desc: "Developing trajectory tracking and obstacle avoidance with TurtleBot 3.",
     tags: ["ROS", "Fractional PID", "Path-finding"],
   },
   {
@@ -86,7 +86,7 @@ const NODES: OrbitNode[] = [
     accent: "#fbbf24",
     ring: 2,
     angle: 20,
-    desc: "I turn battery measurements and simulations into useful engineering data.",
+    desc: "Turning battery measurements and simulations into useful engineering data.",
     tags: ["SOC", "SOH", "RUL", "ECM simulation"],
   },
   {
@@ -96,7 +96,7 @@ const NODES: OrbitNode[] = [
     accent: "#fb7185",
     ring: 2,
     angle: 140,
-    desc: "I enjoy working and communicating across languages and cultures.",
+    desc: "Working and communicating across languages and cultures.",
     tags: ["Hindi · native", "English · C2", "German · B1"],
   },
   {
@@ -106,7 +106,7 @@ const NODES: OrbitNode[] = [
     accent: "#7c8bff",
     ring: 2,
     angle: 260,
-    desc: "I study Computer Science at KIT in Karlsruhe.",
+    desc: "Studying Computer Science at KIT in Karlsruhe.",
     tags: ["KIT", "B.Tech · 9.35 CGPA", "Springer-published"],
   },
 ];

@@ -108,9 +108,9 @@ export const experiences: Experience[] = [
     start: "2026-01",
     current: true,
     summary:
-      "I work on reinforcement learning for energy market simulations within the open source ASSUME framework.",
+      "Researching reinforcement learning for energy market simulations within the open source ASSUME framework.",
     bullets: [
-      "I develop and integrate a Multi-Agent Proximal Policy Optimization algorithm in ASSUME to model complex energy market behaviour.",
+      "Developing and integrating a Multi-Agent Proximal Policy Optimization algorithm in ASSUME to model complex energy market behaviour.",
     ],
     accent: "#34d399",
     graphic: "energy",
@@ -125,16 +125,16 @@ export const experiences: Experience[] = [
     period: "Jun 2024 to Jul 2025",
     start: "2024-06",
     summary:
-      "I owned the machine learning pipelines for industrial battery analytics and helped a small team deliver models consistently.",
+      "Developed machine learning pipelines for industrial battery analytics and enabled a small team to deliver models consistently.",
     bullets: [
-      "I built Python pipelines for cell level SOC, SOH, RUL and anomaly detection. Each model shipped as a reusable package with automated GitHub Actions workflows.",
-      "I generated synthetic battery data with Equivalent Circuit Model simulations, then built the cleaning, feature engineering and validation steps around it.",
-      "I designed a Streamlit dashboard for responsive cell metric analysis and documented the full system with clear UML diagrams.",
-      "I introduced shared templates for documentation, reports and GitHub packages so the growing team could keep its work traceable.",
+      "Built Python pipelines for cell level SOC, SOH, RUL and anomaly detection. Shipped each model as a reusable package with automated GitHub Actions workflows.",
+      "Produced synthetic battery data with Equivalent Circuit Model simulations and built the supporting cleaning, feature engineering and validation steps.",
+      "Designed a Streamlit dashboard for responsive cell metric analysis and documented the full system with clear UML diagrams.",
+      "Introduced shared templates for documentation, reports and GitHub packages to keep the growing team's work traceable.",
     ],
     links: [
       {
-        label: "Project Presentation",
+        label: "Internship Completion Certificate",
         url: "https://drive.google.com/file/d/1DOtECTda3pAH0nPg1PKWBIrCOYQ2s-HT/view?usp=sharing",
         type: "drive",
       },
@@ -152,7 +152,7 @@ export const experiences: Experience[] = [
     period: "Jun 2023 to Aug 2023",
     start: "2023-06",
     summary:
-      "I forecast sales across several product lines using statistical models and neural networks.",
+      "Forecast sales across several product lines using statistical models and neural networks.",
     bullets: [
       "Applied time-series forecasting with 10+ statistical models (ARIMA family) and LSTM neural networks to predict future sales across diverse product lines.",
       "Contributed to a 45%+ improvement in error rate compared to traditional predictive models.",
@@ -169,7 +169,7 @@ export const experiences: Experience[] = [
     mode: "Remote",
     period: "Jan 2023 to May 2023",
     start: "2023-01",
-    summary: "I helped build a secure and approachable iOS banking application.",
+    summary: "Developed a secure and approachable iOS banking application.",
     bullets: [
       "Helped develop a secure digital-banking iOS application using UIKit and SwiftUI.",
       "Built user-friendly interfaces with intricate designs and logic.",
@@ -187,7 +187,7 @@ export const experiences: Experience[] = [
     period: "Jun 2022 to Nov 2022",
     start: "2022-06",
     summary:
-      "I collected a large YouTube dataset and trained a classifier for educational content.",
+      "Collected a large YouTube dataset and trained a classifier for educational content.",
     bullets: [
       "Scraped 10,000+ YouTube videos into channel-specific and video-specific intensive datasets.",
       "Built an innovative model architecture for categorical classification of YouTube videos (educational vs. non-educational).",
@@ -216,7 +216,7 @@ export const experiences: Experience[] = [
     mode: "Remote",
     period: "Apr 2022 to Jun 2022",
     start: "2022-04",
-    summary: "I wrote practical, detailed articles about algorithms and data structures.",
+    summary: "Wrote practical, detailed articles about algorithms and data structures.",
     bullets: [
       "Published articles explaining algorithms and data structures with practical implementation, diverse methods and mathematical rigor.",
     ],
@@ -263,7 +263,7 @@ export const projects: Project[] = [
     tags: ["Embedded Systems", "Arduino", "BLE", "Sensor Fusion", "IoT"],
     bullets: [
       "Designed a portable, password-protected intrusion-detection system on a Seeed XIAO nRF52840, fusing an IR flame sensor (light-change detection) with an LSM6DS3 IMU (tamper / movement detection).",
-      "I combined BLE proximity, live authentication through custom GATT characteristics and a dynamic password with a secure reset flow.",
+      "Combined BLE proximity, live authentication through custom GATT characteristics and a dynamic password with a secure reset flow.",
       "Built a firmware architecture with distinct audible feedback patterns for authentication, intrusion and error states.",
     ],
     links: [
@@ -284,7 +284,7 @@ export const projects: Project[] = [
     period: "Dec 2024 to Jun 2025",
     tags: ["ROS", "TurtleBot-3", "Arduino", "Raspberry Pi", "Control Theory"],
     bullets: [
-      "I compared standard, fractional, adaptive fractional and nonlinear fractional PID controllers for trajectory tracking.",
+      "Compared standard, fractional, adaptive fractional and nonlinear fractional PID controllers for trajectory tracking.",
       "Proposed a general PID control mechanism, validated both in simulation and on a physical TurtleBot-3.",
       "Implemented and improved four pathfinding algorithms (PSO-Heuristic A*, Dijkstra, BFS, Greedy Best-First), integrating them with PID for static obstacle avoidance.",
     ],
