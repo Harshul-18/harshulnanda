@@ -63,13 +63,13 @@ export const profile = {
     "M.Sc. Computer Science @ KIT",
     "Machine Learning & Data Engineer",
     "Reinforcement Learning Researcher",
-    "Builder of end-to-end data pipelines",
+    "Builder of complete data pipelines",
   ],
-  status: "Currently @ KIT — Energy-Market RL",
+  status: "Currently at KIT, researching energy markets with RL",
   tagline:
-    "I build end-to-end, data-driven systems — from automated measurement pipelines to reinforcement-learning agents that simulate energy markets.",
+    "I build practical, data-driven systems. My work ranges from automated measurement pipelines to reinforcement learning agents for energy market simulations.",
   summary:
-    "M.Sc. Computer Science student with a strong foundation in Python, data processing and reinforcement learning. I build automated data pipelines that clean, harmonize and validate measurement data, paired with clear methodology documentation. I'm especially drawn to end-to-end, data-driven projects — and I'm currently contributing to an energy-market simulation project at KIT.",
+    "I am a Computer Science master's student who enjoys turning messy data and difficult research questions into working systems. Most of my work combines Python, data engineering and reinforcement learning. I currently contribute to an energy market simulation project at KIT.",
   location: "Karlsruhe, Germany",
   email: "harshulnanda0@gmail.com",
   phones: ["+49 1521 4302080", "+91 95824 55996"],
@@ -90,7 +90,7 @@ export const profile = {
 };
 
 export const stats = [
-  { value: 9.35, suffix: "", label: "B.Tech CGPA", hint: "≈ 1.3–1.5 German GPA" },
+  { value: 9.35, suffix: "", label: "B.Tech CGPA", hint: "approximately 1.3 to 1.5 German GPA" },
   { value: 6, suffix: "", label: "Roles & internships", hint: "4 countries" },
   { value: 5, suffix: "", label: "Research projects", hint: "Springer-published" },
   { value: 98, suffix: "%", label: "Peak model accuracy", hint: "Fine-tuned BERT" },
@@ -104,13 +104,13 @@ export const experiences: Experience[] = [
     companyUrl: "https://www.kit.edu",
     location: "Karlsruhe, Germany",
     mode: "On-site",
-    period: "Jan 2026 — Present",
+    period: "Jan 2026 to present",
     start: "2026-01",
     current: true,
     summary:
-      "Reinforcement learning for energy-market simulation inside the open-source ASSUME framework.",
+      "I work on reinforcement learning for energy market simulations within the open source ASSUME framework.",
     bullets: [
-      "Developing and integrating a Multi-Agent Proximal Policy Optimization (MAPPO) algorithm within the ASSUME framework to simulate complex energy-market dynamics with reinforcement learning.",
+      "I develop and integrate a Multi-Agent Proximal Policy Optimization algorithm in ASSUME to model complex energy market behaviour.",
     ],
     accent: "#34d399",
     graphic: "energy",
@@ -122,15 +122,15 @@ export const experiences: Experience[] = [
     companyUrl: "https://www.mea-tec.com",
     location: "Turkey",
     mode: "Remote",
-    period: "Jun 2024 — Jul 2025",
+    period: "Jun 2024 to Jul 2025",
     start: "2024-06",
     summary:
-      "Owned end-to-end ML pipelines for industrial battery analytics and the data-governance layer that let a small team scale model delivery.",
+      "I owned the machine learning pipelines for industrial battery analytics and helped a small team deliver models consistently.",
     bullets: [
-      "Built end-to-end ML pipelines for industrial battery analytics — cell-level SOC, SOH, RUL and anomaly detection — shipping each as a modular Python package with GitHub Actions CI/CD, so stakeholders could consume models without touching training code.",
-      "Generated synthetic battery datasets via Equivalent Circuit Model (ECM) simulations and built preprocessing pipelines covering cleaning, feature engineering and validation against domain rules.",
-      "Designed a Streamlit analytics dashboard with asynchronous processing and advanced cache management for real-time visualisation of cell metrics, with UML architectures documenting the end-to-end system.",
-      "Established company-wide standards for documentation, reporting and GitHub package templates — a lightweight data-governance layer preserving traceability as the team scaled.",
+      "I built Python pipelines for cell level SOC, SOH, RUL and anomaly detection. Each model shipped as a reusable package with automated GitHub Actions workflows.",
+      "I generated synthetic battery data with Equivalent Circuit Model simulations, then built the cleaning, feature engineering and validation steps around it.",
+      "I designed a Streamlit dashboard for responsive cell metric analysis and documented the full system with clear UML diagrams.",
+      "I introduced shared templates for documentation, reports and GitHub packages so the growing team could keep its work traceable.",
     ],
     links: [
       {
@@ -149,10 +149,10 @@ export const experiences: Experience[] = [
     companyUrl: "https://havells.com",
     location: "Noida, India",
     mode: "On-site",
-    period: "Jun 2023 — Aug 2023",
+    period: "Jun 2023 to Aug 2023",
     start: "2023-06",
     summary:
-      "Sales forecasting across diverse product lines using statistical and deep-learning models.",
+      "I forecast sales across several product lines using statistical models and neural networks.",
     bullets: [
       "Applied time-series forecasting with 10+ statistical models (ARIMA family) and LSTM neural networks to predict future sales across diverse product lines.",
       "Contributed to a 45%+ improvement in error rate compared to traditional predictive models.",
@@ -167,9 +167,9 @@ export const experiences: Experience[] = [
     companyUrl: "https://www.paraslabs.com",
     location: "India",
     mode: "Remote",
-    period: "Jan 2023 — May 2023",
+    period: "Jan 2023 to May 2023",
     start: "2023-01",
-    summary: "Secure digital-banking iOS application development.",
+    summary: "I helped build a secure and approachable iOS banking application.",
     bullets: [
       "Helped develop a secure digital-banking iOS application using UIKit and SwiftUI.",
       "Built user-friendly interfaces with intricate designs and logic.",
@@ -184,10 +184,10 @@ export const experiences: Experience[] = [
     companyUrl: "https://beyondexams.org",
     location: "India",
     mode: "Remote",
-    period: "Jun 2022 — Nov 2022",
+    period: "Jun 2022 to Nov 2022",
     start: "2022-06",
     summary:
-      "Large-scale YouTube scraping and an educational-vs-non-educational video classifier.",
+      "I collected a large YouTube dataset and trained a classifier for educational content.",
     bullets: [
       "Scraped 10,000+ YouTube videos into channel-specific and video-specific intensive datasets.",
       "Built an innovative model architecture for categorical classification of YouTube videos (educational vs. non-educational).",
@@ -214,9 +214,9 @@ export const experiences: Experience[] = [
     companyUrl: "https://iq.opengenus.org",
     location: "Tokyo (Remote)",
     mode: "Remote",
-    period: "Apr 2022 — Jun 2022",
+    period: "Apr 2022 to Jun 2022",
     start: "2022-04",
-    summary: "Authored deep-dive articles on algorithms and data structures.",
+    summary: "I wrote practical, detailed articles about algorithms and data structures.",
     bullets: [
       "Published articles explaining algorithms and data structures with practical implementation, diverse methods and mathematical rigor.",
     ],
@@ -237,7 +237,7 @@ export const projects: Project[] = [
     id: "sentiment",
     title: "Sentiment Analysis for Digital Marketing",
     short:
-      "A RoBERTa-powered sentiment pipeline mining Ryanair Flex Plus customer comments.",
+      "A RoBERTa sentiment pipeline that examines Ryanair Flex Plus customer comments.",
     period: "May 2026",
     tags: ["NLP", "RoBERTa", "R", "Hugging Face", "Marketing Analytics"],
     bullets: [
@@ -256,14 +256,14 @@ export const projects: Project[] = [
   },
   {
     id: "ble-ids",
-    title: "BLE-Enabled Smart Intrusion Detection System",
+    title: "Smart Intrusion Detection with BLE",
     short:
-      "A portable, password-protected intrusion detector with multi-factor BLE owner verification.",
-    period: "Jan 2026 — Feb 2026",
+      "A portable intrusion detector with password protection and multi-factor BLE verification.",
+    period: "Jan 2026 to Feb 2026",
     tags: ["Embedded Systems", "Arduino", "BLE", "Sensor Fusion", "IoT"],
     bullets: [
       "Designed a portable, password-protected intrusion-detection system on a Seeed XIAO nRF52840, fusing an IR flame sensor (light-change detection) with an LSM6DS3 IMU (tamper / movement detection).",
-      "Implemented multi-factor owner verification — BLE proximity (RSSI thresholding), real-time auth via custom GATT characteristics, and a dynamic password system with a secure reset flow.",
+      "I combined BLE proximity, live authentication through custom GATT characteristics and a dynamic password with a secure reset flow.",
       "Built a firmware architecture with distinct audible feedback patterns for authentication, intrusion and error states.",
     ],
     links: [
@@ -280,11 +280,11 @@ export const projects: Project[] = [
     id: "robotics",
     title: "Autonomous Trajectory Tracking in Mobile Robotics",
     short:
-      "Fractional-PID control & obstacle avoidance on a real TurtleBot-3, validated in sim and hardware.",
-    period: "Dec 2024 — Jun 2025",
+      "Fractional PID control and obstacle avoidance on a TurtleBot 3, tested in simulation and on real hardware.",
+    period: "Dec 2024 to Jun 2025",
     tags: ["ROS", "TurtleBot-3", "Arduino", "Raspberry Pi", "Control Theory"],
     bullets: [
-      "Compared four PID control models — standard, fractional, adaptive-fractional and non-linear-fractional — to regulate a robot's movement along a predefined trajectory.",
+      "I compared standard, fractional, adaptive fractional and nonlinear fractional PID controllers for trajectory tracking.",
       "Proposed a general PID control mechanism, validated both in simulation and on a physical TurtleBot-3.",
       "Implemented and improved four pathfinding algorithms (PSO-Heuristic A*, Dijkstra, BFS, Greedy Best-First), integrating them with PID for static obstacle avoidance.",
     ],
@@ -308,7 +308,7 @@ export const projects: Project[] = [
     title: "Predictive Health Management System",
     short:
       "Patient & admin dashboards predicting hospital-readmission risk in real time.",
-    period: "Nov 2024 — Dec 2024",
+    period: "Nov 2024 to Dec 2024",
     tags: ["Web Development", "Dashboards", "Random Forests", "Gaussian Processes"],
     bullets: [
       "Developed integrated patient and admin dashboards for real-time readmission-risk tracking.",
@@ -329,7 +329,7 @@ export const projects: Project[] = [
     title: "Predicting Unethical Activity in Videos",
     short:
       "Deep-learning video classification separating criminal from safe content.",
-    period: "Nov 2023 — Dec 2023",
+    period: "Nov 2023 to Dec 2023",
     tags: ["Video Classification", "Deep Learning", "OpenCV"],
     bullets: [
       "Curated a dataset of CCTV footage and videos containing unethical activity, then analysed four video-classification model architectures.",
@@ -349,7 +349,7 @@ export const projects: Project[] = [
       },
     ],
     published:
-      "Published — Proceedings of the Intl. Conference on Generative AI, Cryptography & Predictive Analytics (Springer).",
+      "Published in the Springer proceedings of the International Conference on Generative AI, Cryptography and Predictive Analytics.",
     accent: "#a78bfa",
     graphic: "cctv",
   },
@@ -358,10 +358,10 @@ export const projects: Project[] = [
     title: "Crime Prediction in Conversations",
     short:
       "A fine-tuned BERT model flagging unethical intent across everyday dialogue.",
-    period: "Feb 2023 — Apr 2023",
+    period: "Feb 2023 to Apr 2023",
     tags: ["NLP", "BERT", "Data Science"],
     bullets: [
-      "Built a dataset of 1,000+ daily-life conversations (7–10 dialogues each), annotated across six categories from unethical to neutral.",
+      "Built a dataset of 1,000+ daily life conversations with 7 to 10 exchanges each, annotated across six categories from unethical to neutral.",
       "Studied and compared 50+ crime-predicting text-classification architectures.",
       "Proposed a state-of-the-art fine-tuned BERT architecture for public-safety NLP, reaching 98% accuracy on the created dataset.",
     ],
@@ -458,22 +458,22 @@ export const education: EducationItem[] = [
     url: "https://www.kit.edu",
     degree: "M.Sc. in Computer Science",
     detail: "Karlsruhe, Germany",
-    period: "Oct 2025 — Present",
+    period: "Oct 2025 to present",
     current: true,
   },
   {
     school: "Cluster Innovation Centre, University of Delhi",
     url: "https://cic.du.ac.in",
     degree: "B.Tech. in Information Technology & Mathematical Innovation",
-    detail: "Final grade: 9.35 CGPA (≈ 1.3–1.5 German GPA)",
-    period: "Nov 2021 — Jun 2025",
+    detail: "Final grade: 9.35 CGPA, approximately 1.3 to 1.5 in the German system",
+    period: "Nov 2021 to Jun 2025",
   },
   {
     school: "Adarsh Public School",
     url: "http://www.aps.ac.in",
     degree: "Higher Secondary (Class XII)",
     detail: "Final grade: 91.2%",
-    period: "Apr 2020 — Jun 2021",
+    period: "Apr 2020 to Jun 2021",
   },
 ];
 
@@ -538,7 +538,7 @@ export const certifications: Certification[] = [
     url: "https://www.udemy.com/certificate/UC-635b426c-0e46-42fe-add1-eeed4d300690/",
   },
   {
-    title: "Asana – Project Management",
+    title: "Asana Project Management",
     issuer: "Udemy",
     short: "Asana",
     date: "Oct 2025",
@@ -613,7 +613,7 @@ export interface Achievement {
 // Ordered oldest → newest to read as a journey.
 export const achievements: Achievement[] = [
   {
-    title: "Indian Computing Olympiad — Zonal Round",
+    title: "Indian Computing Olympiad, Zonal Round",
     org: "IARCS",
     date: "Dec 2020",
     year: "2020",
@@ -633,7 +633,7 @@ export const achievements: Achievement[] = [
     accent: "#a78bfa",
   },
   {
-    title: "Hackathon Winner — Think Beyond Exams",
+    title: "Hackathon Winner at Think Beyond Exams",
     org: "BeyondExams",
     date: "Nov 2022",
     year: "2022",
@@ -644,7 +644,7 @@ export const achievements: Achievement[] = [
     highlight: true,
   },
   {
-    title: "Facilitator — Faculty Development Program",
+    title: "Facilitator for the Faculty Development Program",
     org: "Cluster Innovation Centre",
     date: "Nov 2023",
     year: "2023",
@@ -659,7 +659,7 @@ export const achievements: Achievement[] = [
     date: "Aug 2025",
     year: "2025",
     tag: "Workshop",
-    note: "5-day workshop on EV technology — battery dynamics, motors, power electronics and charging.",
+    note: "A five day workshop on EV technology covering battery dynamics, motors, power electronics and charging.",
     icon: "zap",
     accent: "#34d399",
   },

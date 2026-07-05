@@ -32,7 +32,7 @@ const siteUrl = "https://harshulnanda.netlify.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: `${profile.name} — ML & Data Engineer`,
+  title: `${profile.name} | ML & Data Engineer`,
   description: profile.tagline,
   keywords: [
     "Harshul Nanda",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: profile.name }],
   openGraph: {
-    title: `${profile.name} — ML & Data Engineer`,
+    title: `${profile.name} | ML & Data Engineer`,
     description: profile.tagline,
     url: siteUrl,
     siteName: profile.name,
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${profile.name} — ML & Data Engineer`,
+    title: `${profile.name} | ML & Data Engineer`,
     description: profile.tagline,
   },
   icons: { icon: "/favicon.ico" },

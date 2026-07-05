@@ -36,9 +36,9 @@ export default function Education() {
                   </span>
                 )}
               </div>
-              <p className="mt-4 font-mono text-xs text-muted">{e.period}</p>
+              <p className="mt-4 font-mono text-xs text-muted">{t(e.period)}</p>
               <h3 className="mt-1 font-display text-lg font-semibold leading-snug">
-                {e.degree}
+                {t(e.degree)}
               </h3>
               <a
                 href={e.url}
@@ -53,7 +53,7 @@ export default function Education() {
                 />
               </a>
               {e.detail && (
-                <p className="mt-2 text-sm text-muted">{e.detail}</p>
+                <p className="mt-2 text-sm text-muted">{t(e.detail)}</p>
               )}
             </TiltCard>
           </Reveal>
@@ -66,7 +66,7 @@ export default function Education() {
           <BadgeCheck size={20} className="text-brand-4" /> {t("Certifications")}
         </h3>
         <p className="mb-2 text-sm text-muted">
-          {t("Hover a medal to preview it — click any marked ↗ to open the credential.")}
+          {t("Move over a medal to preview it. Select the arrow to open the credential.")}
         </p>
       </Reveal>
       <Reveal>
@@ -79,7 +79,7 @@ export default function Education() {
           <Trophy size={20} className="text-amber-300" /> {t("Achievements & Activities")}
         </h3>
         <p className="mb-2 text-sm text-muted">
-          {t("A five-year journey — from olympiads to a hackathon win and beyond.")}
+          {t("A few milestones from olympiads, workshops and a hackathon win.")}
         </p>
       </Reveal>
       <AchievementTimeline />

@@ -18,6 +18,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import { certifications, type CertIcon } from "@/lib/data";
+import { useLanguage } from "@/lib/i18n";
 
 const ICONS: Record<CertIcon, LucideIcon> = {
   target: Target,
@@ -34,6 +35,7 @@ const ICONS: Record<CertIcon, LucideIcon> = {
 };
 
 export default function CertWall() {
+  const { t } = useLanguage();
   const [open, setOpen] = useState<number | null>(null);
   const [hover, setHover] = useState<number | null>(null);
   const [hoverable, setHoverable] = useState(false);
@@ -66,13 +68,13 @@ export default function CertWall() {
                   className="glass absolute bottom-[118px] left-1/2 z-[68] w-56 -translate-x-1/2 rounded-2xl p-4 text-center"
                   style={{ ["--accent" as string]: c.accent }}
                 >
-                  <p className="text-sm font-medium leading-snug">{c.title}</p>
+                  <p className="text-sm font-medium leading-snug">{t(c.title)}</p>
                   <p className="mt-1.5 text-xs text-muted">{c.issuer}</p>
                   <p
                     className="mt-1 font-mono text-[11px]"
                     style={{ color: c.accent }}
                   >
-                    {c.date}
+                    {t(c.date)}
                   </p>
                   {c.url && (
                     <a
@@ -82,7 +84,7 @@ export default function CertWall() {
                       className="mt-2.5 inline-flex items-center gap-1 rounded-full border px-3 py-1 text-xs font-medium transition-colors hover:bg-white/10"
                       style={{ borderColor: `${c.accent}66`, color: c.accent }}
                     >
-                      View credential <ArrowUpRight size={12} />
+                      {t("View credential")} <ArrowUpRight size={12} />
                     </a>
                   )}
                   <span
@@ -118,8 +120,8 @@ export default function CertWall() {
               type="button"
               aria-label={
                 c.url
-                  ? `${c.title} — ${c.issuer}, ${c.date}. View credential`
-                  : `${c.title} — ${c.issuer}, ${c.date}`
+                  ? `${t(c.title)}, ${c.issuer}, ${t(c.date)}. ${t("View credential")}`
+                  : `${t(c.title)}, ${c.issuer}, ${t(c.date)}`
               }
               onPointerEnter={() => setHover(i)}
               onPointerLeave={() => setHover(null)}

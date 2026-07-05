@@ -15,6 +15,7 @@ import {
   MapPin,
   type LucideIcon,
 } from "lucide-react";
+import { useLanguage } from "@/lib/i18n";
 
 type OrbitNode = {
   id: string;
@@ -35,7 +36,7 @@ const NODES: OrbitNode[] = [
     accent: "#a78bfa",
     ring: 0,
     angle: 0,
-    desc: "Designing & training models, end-to-end.",
+    desc: "I design, train and evaluate models from start to finish.",
     tags: ["PyTorch", "TensorFlow", "Keras", "Scikit-learn", "OpenCV"],
   },
   {
@@ -45,7 +46,7 @@ const NODES: OrbitNode[] = [
     accent: "#34d399",
     ring: 0,
     angle: 180,
-    desc: "Multi-agent RL for energy-market simulation @ KIT.",
+    desc: "I use multi-agent reinforcement learning to simulate energy markets at KIT.",
     tags: ["MAPPO", "ASSUME framework", "Policy Optimization"],
   },
   {
@@ -55,7 +56,7 @@ const NODES: OrbitNode[] = [
     accent: "#22d3ee",
     ring: 1,
     angle: 35,
-    desc: "Automated pipelines that clean, harmonize & validate.",
+    desc: "I build reliable pipelines that clean, harmonize and validate data.",
     tags: ["Pipelines", "Validation", "CI/CD", "Pandas"],
   },
   {
@@ -65,7 +66,7 @@ const NODES: OrbitNode[] = [
     accent: "#818cf8",
     ring: 1,
     angle: 155,
-    desc: "Fine-tuned BERT for public-safety text classification.",
+    desc: "I fine-tune language models for practical text classification tasks.",
     tags: ["BERT", "98% accuracy", "LangChain"],
   },
   {
@@ -75,7 +76,7 @@ const NODES: OrbitNode[] = [
     accent: "#38bdf8",
     ring: 1,
     angle: 275,
-    desc: "Trajectory tracking & obstacle avoidance on TurtleBot-3.",
+    desc: "I work on trajectory tracking and obstacle avoidance with TurtleBot 3.",
     tags: ["ROS", "Fractional PID", "Path-finding"],
   },
   {
@@ -85,7 +86,7 @@ const NODES: OrbitNode[] = [
     accent: "#fbbf24",
     ring: 2,
     angle: 20,
-    desc: "Industrial battery analytics & synthetic data.",
+    desc: "I turn battery measurements and simulations into useful engineering data.",
     tags: ["SOC", "SOH", "RUL", "ECM simulation"],
   },
   {
@@ -95,7 +96,7 @@ const NODES: OrbitNode[] = [
     accent: "#fb7185",
     ring: 2,
     angle: 140,
-    desc: "Building & communicating across borders.",
+    desc: "I enjoy working and communicating across languages and cultures.",
     tags: ["Hindi · native", "English · C2", "German · B1"],
   },
   {
@@ -105,7 +106,7 @@ const NODES: OrbitNode[] = [
     accent: "#7c8bff",
     ring: 2,
     angle: 260,
-    desc: "M.Sc. Computer Science @ KIT, Germany.",
+    desc: "I study Computer Science at KIT in Karlsruhe.",
     tags: ["KIT", "B.Tech · 9.35 CGPA", "Springer-published"],
   },
 ];
@@ -114,6 +115,7 @@ const RADII = [0.4, 0.63, 0.84];
 const SPEEDS = [7, -5, 3.6]; // deg/sec per ring
 
 export default function SkillOrbit() {
+  const { t } = useLanguage();
   const stageRef = useRef<HTMLDivElement>(null);
   const tiltRef = useRef<HTMLDivElement>(null);
   const planetRefs = useRef<(HTMLButtonElement | null)[]>([]);
@@ -233,7 +235,7 @@ export default function SkillOrbit() {
         >
           <div
             ref={tiltRef}
-            className="absolute inset-0 transition-transform duration-300 ease-out"
+            className="absolute inset-0 transition-transform duration-100 ease-out"
           >
             {/* orbit rings */}
             <svg
@@ -320,7 +322,7 @@ export default function SkillOrbit() {
                   onFocus={() => enter(n)}
                   onBlur={leave}
                   onClick={() => toggle(n)}
-                  aria-label={n.label}
+                  aria-label={t(n.label)}
                   className="absolute left-0 top-0 z-10 cursor-none"
                   style={{
                     width: ps,
@@ -365,20 +367,20 @@ export default function SkillOrbit() {
                   <active.Icon size={24} />
                 </div>
                 <h3 className="font-display text-xl font-semibold">
-                  {active.label}
+                  {t(active.label)}
                 </h3>
-                <p className="mt-2 text-sm text-muted">{active.desc}</p>
+                <p className="mt-2 text-sm text-muted">{t(active.desc)}</p>
                 <div className="mt-4 flex flex-wrap gap-2">
-                  {active.tags.map((t) => (
+                  {active.tags.map((tag) => (
                     <span
-                      key={t}
+                      key={tag}
                       className="rounded-lg border px-2.5 py-1 text-xs"
                       style={{
                         borderColor: `${active.accent}40`,
                         color: "rgba(232,234,246,0.9)",
                       }}
                     >
-                      {t}
+                      {t(tag)}
                     </span>
                   ))}
                 </div>
@@ -392,11 +394,10 @@ export default function SkillOrbit() {
                   Harshul Nanda
                 </h3>
                 <p className="mt-1 text-sm text-brand-2">
-                  ML &amp; Data Engineer · RL Researcher
+                  {t("ML & Data Engineer and RL Researcher")}
                 </p>
                 <p className="mt-3 flex items-center gap-1.5 text-sm text-muted">
-                  <MapPin size={14} className="text-brand-2" /> Karlsruhe,
-                  Germany
+                  <MapPin size={14} className="text-brand-2" /> {t("Karlsruhe, Germany")}
                 </p>
               </Panel>
             ) : (
@@ -409,11 +410,10 @@ export default function SkillOrbit() {
                   <MousePointer2 size={26} />
                 </motion.div>
                 <h3 className="font-display text-lg font-medium text-fg/80">
-                  Explore the orbit
+                  {t("Explore the orbit")}
                 </h3>
                 <p className="mt-1 text-sm text-muted">
-                  Hover or tap a node to reveal how I work — and the core for who
-                  I am.
+                  {t("Move over a node or tap it to learn more. Select the centre to see who I am.")}
                 </p>
                 <div className="mt-4 flex gap-1.5">
                   {NODES.map((n) => (

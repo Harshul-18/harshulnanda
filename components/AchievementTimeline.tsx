@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import Reveal from "./ui/Reveal";
 import { achievements, type AchievementIcon } from "@/lib/data";
+import { useLanguage } from "@/lib/i18n";
 
 const ICONS: Record<AchievementIcon, LucideIcon> = {
   code: Code2,
@@ -23,6 +24,7 @@ const ICONS: Record<AchievementIcon, LucideIcon> = {
 };
 
 export default function AchievementTimeline() {
+  const { t } = useLanguage();
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -109,14 +111,14 @@ export default function AchievementTimeline() {
                         }}
                       >
                         {a.highlight && <Trophy size={11} />}
-                        {a.tag}
+                        {t(a.tag)}
                       </span>
                       <span className="font-mono text-xs text-muted">
-                        {a.date}
+                        {t(a.date)}
                       </span>
                     </div>
                     <h4 className="mt-2.5 font-display text-lg font-semibold leading-snug">
-                      {a.title}
+                      {t(a.title)}
                     </h4>
                     <p
                       className="text-sm font-medium"
@@ -124,7 +126,7 @@ export default function AchievementTimeline() {
                     >
                       {a.org}
                     </p>
-                    <p className="mt-2 text-sm text-muted">{a.note}</p>
+                    <p className="mt-2 text-sm text-muted">{t(a.note)}</p>
                   </div>
                 </div>
               </div>

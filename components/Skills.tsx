@@ -25,7 +25,7 @@ export default function Skills() {
           label={t("Toolkit")}
           title={t("Skills &")}
           highlight={t("technologies.")}
-          sub={t("Hover a slice of the ring — or its label — to light up everything I use in that domain.")}
+          sub={t("Move over a segment or its label to see the tools I use in that area.")}
         />
       </div>
 
@@ -37,7 +37,7 @@ export default function Skills() {
               key={i}
               className="whitespace-nowrap rounded-full border border-white/10 bg-white/[0.04] px-5 py-2 font-display text-lg font-medium text-fg/80"
             >
-              {s}
+              {t(s)}
             </span>
           ))}
         </div>

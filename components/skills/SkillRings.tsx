@@ -4,12 +4,14 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Reveal from "../ui/Reveal";
 import { skillGroups } from "@/lib/data";
+import { useLanguage } from "@/lib/i18n";
 
 const R = 70;
 const C = 2 * Math.PI * R;
 const GAP = 5;
 
 export default function SkillRings() {
+  const { t } = useLanguage();
   const total = skillGroups.reduce((s, g) => s + g.skills.length, 0);
   const [active, setActive] = useState<string | null>(null);
 
@@ -93,7 +95,7 @@ export default function SkillRings() {
                       {activeGroup.skills.length}
                     </div>
                     <div className="mt-1 max-w-[120px] text-xs font-medium leading-tight">
-                      {activeGroup.title}
+                      {t(activeGroup.title)}
                     </div>
                   </motion.div>
                 ) : (
@@ -107,7 +109,7 @@ export default function SkillRings() {
                     <div className="font-display text-4xl font-bold text-gradient">
                       {total}
                     </div>
-                    <div className="mt-1 text-xs text-muted">skills</div>
+                    <div className="mt-1 text-xs text-muted">{t("skills")}</div>
                   </motion.div>
                 )}
               </AnimatePresence>
@@ -145,7 +147,7 @@ export default function SkillRings() {
                       }}
                     />
                     <span className="font-display text-sm font-medium">
-                      {g.title}
+                      {t(g.title)}
                     </span>
                   </span>
                   <span

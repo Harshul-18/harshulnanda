@@ -164,7 +164,7 @@ export default function Hero() {
           className="mt-8 flex items-center justify-center gap-5"
         >
           <span className="flex items-center gap-1.5 text-xs text-muted">
-            <MapPin size={13} className="text-brand-2" /> {profile.location}
+            <MapPin size={13} className="text-brand-2" /> {t(profile.location)}
           </span>
           <span className="h-4 w-px bg-white/10" />
           <div className="flex items-center gap-3">

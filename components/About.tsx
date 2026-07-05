@@ -14,7 +14,7 @@ export default function About() {
         label={t("About")}
         title={t("An orbit of how I")}
         highlight={t("work.")}
-        sub={t("No bio to skim — explore the constellation instead. Each node is a domain I build in; the core is me.")}
+        sub={t("I work across several connected fields. Explore the orbit to see what I build and how the pieces fit together.")}
       />
 
       <Reveal className="mt-12">

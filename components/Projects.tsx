@@ -22,7 +22,7 @@ export default function Projects() {
         label={t("Selected Work")}
         title={t("Research &")}
         highlight={t("projects.")}
-        sub={t("From embedded intrusion detection and autonomous robotics to deep-learning systems published with Springer.")}
+        sub={t("A selection of projects in embedded systems, autonomous robotics, data engineering and applied machine learning.")}
       />
 
       <div className="mt-16 space-y-20 md:space-y-28">
@@ -76,7 +76,7 @@ export default function Projects() {
                         {p.metric.value}
                       </div>
                       <div className="text-[10px] uppercase tracking-wider text-muted">
-                        {p.metric.label}
+                        {t(p.metric.label)}
                       </div>
                     </motion.div>
                   )}
@@ -86,21 +86,21 @@ export default function Projects() {
               {/* details */}
               <Reveal delay={0.12} className={flip ? "md:order-1" : ""}>
                 <div className="flex flex-wrap gap-2">
-                  {p.tags.map((t) => (
-                    <span key={t} className="chip">
-                      {t}
+                  {p.tags.map((tag) => (
+                    <span key={tag} className="chip">
+                      {t(tag)}
                     </span>
                   ))}
                 </div>
-                <p className="mt-4 font-mono text-xs text-muted">{p.period}</p>
+                <p className="mt-4 font-mono text-xs text-muted">{t(p.period)}</p>
                 <h3 className="mt-1 font-display text-2xl font-bold tracking-tight sm:text-3xl">
-                  {p.title}
+                  {t(p.title)}
                 </h3>
                 <p
                   className="mt-2 text-base font-medium"
                   style={{ color: p.accent }}
                 >
-                  {p.short}
+                  {t(p.short)}
                 </p>
                 <ul className="mt-4 space-y-2.5">
                   {p.bullets.map((b, j) => (
@@ -109,7 +109,7 @@ export default function Projects() {
                         className="mt-[7px] h-1.5 w-1.5 flex-shrink-0 rounded-full"
                         style={{ background: p.accent }}
                       />
-                      <span>{b}</span>
+                      <span>{t(b)}</span>
                     </li>
                   ))}
                 </ul>
@@ -121,7 +121,7 @@ export default function Projects() {
                       className="mt-0.5 flex-shrink-0"
                       style={{ color: p.accent }}
                     />
-                    <p className="text-xs italic text-fg/80">{p.published}</p>
+                    <p className="text-xs italic text-fg/80">{t(p.published)}</p>
                   </div>
                 )}
 

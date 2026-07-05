@@ -41,7 +41,7 @@ export default function Contact() {
 
         <div className="relative">
           <Reveal>
-            <span className="section-label">06 — {t("Contact")}</span>
+            <span className="section-label">06&nbsp;&nbsp; {t("Contact")}</span>
           </Reveal>
           <Reveal delay={0.08}>
             <h2 className="mt-4 max-w-2xl font-display text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
@@ -103,7 +103,7 @@ export default function Contact() {
           <Reveal delay={0.3}>
             <div className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-sm text-muted">
               <span className="flex items-center gap-1.5">
-                <MapPin size={14} className="text-brand-2" /> {profile.location}
+                <MapPin size={14} className="text-brand-2" /> {t(profile.location)}
               </span>
               {profile.phones.map((p) => (
                 <a
@@ -122,7 +122,7 @@ export default function Contact() {
       {/* footer */}
       <footer className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/8 pt-8 sm:flex-row">
         <p className="text-sm text-muted">
-          © {new Date().getFullYear()} {profile.name}. {t("Built with Next.js, Tailwind & Framer Motion.")}
+          © {new Date().getFullYear()} {profile.name}.
         </p>
         <div className="flex items-center gap-4">
           <span className="hidden font-mono text-xs text-muted/60 sm:block">

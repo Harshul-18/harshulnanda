@@ -78,7 +78,7 @@ export default function EasterEgg() {
     );
     // eslint-disable-next-line no-console
     console.log(
-      "%cYou clearly know your way around. Psst — try the Konami code (↑↑↓↓←→←→ B A).\nLet's build something: harshulnanda0@gmail.com",
+      "%cYou clearly know your way around. Psst, try the Konami code (↑↑↓↓←→←→ B A).\nLet's build something: harshulnanda0@gmail.com",
       "color:#22d3ee"
     );
 
@@ -121,7 +121,7 @@ export default function EasterEgg() {
             <p className="text-sm">
               <span className="font-semibold">{t("Achievement unlocked.")}</span>{" "}
               <span className="text-muted">
-                {t("You found the secret — thanks for exploring!")}
+                {t("You found the secret. Thanks for exploring!")}
               </span>
             </p>
           </motion.div>

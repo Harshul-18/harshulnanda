@@ -29,7 +29,7 @@ export default function Experience() {
         label={t("Experience")}
         title={t("Where I've")}
         highlight={t("worked.")}
-        sub={t("Six roles across research labs and industry — from battery analytics to reinforcement learning at KIT.")}
+        sub={t("My work has taken me from battery analytics and software engineering to reinforcement learning research at KIT.")}
       />
 
       <div ref={ref} className="relative mt-16 pl-8 sm:pl-10">
@@ -69,16 +69,16 @@ export default function Experience() {
                             borderColor: `${exp.accent}55`,
                           }}
                         >
-                          {exp.period}
+                          {t(exp.period)}
                         </span>
                         <span className="chip">
-                          <MapPin size={11} /> {exp.location}
+                          <MapPin size={11} /> {t(exp.location)}
                         </span>
                         <span className="chip">{t(exp.mode)}</span>
                       </div>
 
                       <h3 className="mt-3 font-display text-xl font-semibold">
-                        {exp.role}
+                        {t(exp.role)}
                       </h3>
                       <a
                         href={exp.companyUrl}
@@ -94,7 +94,7 @@ export default function Experience() {
                         />
                       </a>
 
-                      <p className="mt-3 text-sm text-muted">{exp.summary}</p>
+                      <p className="mt-3 text-sm text-muted">{t(exp.summary)}</p>
 
                       <ul className="mt-4 space-y-2.5">
                         {exp.bullets.map((b, j) => (
@@ -103,7 +103,7 @@ export default function Experience() {
                               className="mt-[7px] h-1.5 w-1.5 flex-shrink-0 rounded-full"
                               style={{ background: exp.accent }}
                             />
-                            <span>{b}</span>
+                            <span>{t(b)}</span>
                           </li>
                         ))}
                       </ul>
