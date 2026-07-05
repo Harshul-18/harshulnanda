@@ -111,6 +111,7 @@ export const experiences: Experience[] = [
       "Researching reinforcement learning for energy market simulations within the open source ASSUME framework.",
     bullets: [
       "Developing and integrating a Multi-Agent Proximal Policy Optimization algorithm in ASSUME to model complex energy market behaviour.",
+      "Developing and integrating parameter sharing functionality for reinforcement learning algorithms within the ASSUME framework.",
     ],
     accent: "#34d399",
     graphic: "energy",
@@ -393,7 +394,7 @@ export const skillGroups: SkillGroup[] = [
   {
     title: "Languages",
     accent: "#22d3ee",
-    skills: ["Python", "C / C++", "JavaScript", "MATLAB", "HTML", "CSS", "MySQL"],
+    skills: ["Python", "Rust", "C / C++", "JavaScript", "MATLAB", "HTML", "CSS", "MySQL"],
   },
   {
     title: "ML & Data",

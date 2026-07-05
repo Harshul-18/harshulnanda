@@ -5,7 +5,7 @@ import SkillRings from "./skills/SkillRings";
 import { useLanguage } from "@/lib/i18n";
 
 const MARQUEE = [
-  "Python", "PyTorch", "Reinforcement Learning", "TensorFlow", "Pandas",
+  "Python", "Rust", "PyTorch", "Reinforcement Learning", "TensorFlow", "Pandas",
   "NumPy", "Scikit-learn", "NLP", "OpenCV", "ROS", "Docker", "CI/CD",
   "Streamlit", "Flask", "ReactJS", "LangChain", "MATLAB", "Blender",
 ];
