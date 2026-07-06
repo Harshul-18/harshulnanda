@@ -34,6 +34,23 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: `${profile.name} | ML & Data Engineer`,
   description: profile.tagline,
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  verification: {
+    google: "4AcdUrxE1PCc43RXX2ikAtzDVvC8Fk1ig890fdYMw_s",
+  },
   keywords: [
     "Harshul Nanda",
     "Machine Learning Engineer",
