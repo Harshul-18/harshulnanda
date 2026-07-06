@@ -65,7 +65,7 @@ export const profile = {
     "Reinforcement Learning Researcher",
     "Builder of complete data pipelines",
   ],
-  status: "Currently at KIT, researching energy markets with RL",
+  status: "Currently studying at KIT",
   tagline:
     "I build practical, data-driven systems. My work ranges from automated measurement pipelines to reinforcement learning agents for energy market simulations.",
   summary:

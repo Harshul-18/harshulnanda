@@ -24,7 +24,7 @@ const de: Record<string, string> = {
   Scroll: "Scrollen",
   "Scroll to about": "Zu Über mich scrollen",
   "Toggle menu": "Menü öffnen oder schließen",
-  "Currently at KIT, researching energy markets with RL": "Aktuell forsche ich am KIT mit Reinforcement Learning zu Energiemärkten",
+  "Currently studying at KIT": "Ich studiere derzeit am KIT",
   "M.Sc. Computer Science @ KIT": "M.Sc. Informatik @ KIT",
   "Machine Learning & Data Engineer": "Machine Learning und Data Engineer",
   "Reinforcement Learning Researcher": "Forscher für Reinforcement Learning",
